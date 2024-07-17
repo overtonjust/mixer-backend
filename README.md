@@ -34,7 +34,7 @@ Request Body:
       name: 'Never Gonna Give You Up',
       artist: 'Rick Astley',
       album: 'Whenever You Need Somebody',
-      genre: 'Pop',
+      genre: 'Pop/K-Pop',
       time_in_seconds: 212,
       is_favorite: true,
       img: 'https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/de/eb/63/deeb63c1-7bc0-9153-cfa3-fd9e4929aacf/4050538826562.jpg/1200x1200bb.jpg',
