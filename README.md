@@ -1,6 +1,6 @@
 # Mixer - Backend
 
-This app is designed to store a diverse collection of songs, including details such as title, artist, album, and genre. It allows users to easily add, remove, and update songs from a collaborative Library.
+This app is designed to allow users to easily add, remove, and update songs from a collaborative Library. Fundamentally, it stores a diverse collection of songs, including details such as title, artist, album, and genre.
 
 Noteworthy features:
 
