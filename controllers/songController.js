@@ -1,7 +1,8 @@
 // Dependencies
 const express = require('express');
 const songs = express.Router();
-const { getAllSongs, createSong, updateSong, getOneSong, deleteSong } = require('../queries/songs')
+const { getAllSongs, createSong, updateSong, getOneSong, deleteSong } = require('../queries/songs');
+const { checkName, checkArtist, checkAlbum, checkFavorite } = require('../validations/songValidations')
 
 // READ
 
@@ -27,7 +28,7 @@ songs.get('/:id', async (req, res) => {
 
 // CREATE
 
-songs.post('/', async (req, res) => {
+songs.post('/', checkName, checkArtist, checkAlbum, checkFavorite, async (req, res) => {
     const newSong = await createSong(req.body);
 
     if(newSong.id) {
@@ -38,7 +39,7 @@ songs.post('/', async (req, res) => {
 });
 
 // UPDATE 
-songs.put('/:id', async (req,res) => {
+songs.put('/:id', checkName, checkArtist, checkAlbum, checkFavorite, async (req,res) => {
     const { id } = req.params;
     const updatedSong = await updateSong(id, req.body);
 
