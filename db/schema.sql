@@ -3,6 +3,7 @@ CREATE DATABASE mixer_dev;
 
 \c mixer_dev;
 
+DROP TABLE IF EXISTS mixer; 
 CREATE TABLE mixer (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
