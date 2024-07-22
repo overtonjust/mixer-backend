@@ -9,23 +9,23 @@ Noteworthy features:
 - Viewing the Library
 
 ## REST
-**Base URL:** [https://deployed-url/]()
+**Base URL:** https://mixer-backend.onrender.com
 
 Available endpoints:
 ```
 {
-    addNewSong: `https://deployed-url/songs`,
-    getAllSongs: `https://deployed-url/songs`,
-    getOneSong: `https://deployed-url/songs/:id`,
-    editOneSong: `https://deployed-url/songs/:id`,
-    deleteOneSong: `https://deployed-url/songs/:id`
+    addNewSong: `https://mixer-backend.onrender.com/songs`,
+    getAllSongs: `https://mixer-backend.onrender.com/songs`,
+    getOneSong: `https://mixer-backend.onrender.com/songs/:id`,
+    editOneSong: `https://mixer-backend.onrender.com/songs/:id`,
+    deleteOneSong: `https://mixer-backend.onrender.com/songs/:id`
 }
 ```
 
 ### Adding a new song
 To add a new song to the Library, send a POST request to the /songs endpoint.
 ```
-https://deployed-url/songs
+https://mixer-backend.onrender.com/songs
 ```
 ```
 Request Body:
@@ -47,7 +47,7 @@ Request Body:
 ### Viewing the Library
 To view the Library, send a GET request to the /songs endpoint.
 ```
-https://deployed-url/songs
+https://mixer-backend.onrender.com/songs
 ```
 ```
 Response:
@@ -71,7 +71,7 @@ Response:
 ### Viewing a single song
 To view any particular song, send a GET request to the /songs/:id endpoint.
 ```
-https://deployed-url/songs/:id
+https://mixer-backend.onrender.com/songs/:id
 ```
 ```
 Response: 
@@ -92,7 +92,7 @@ Response:
 ### Editing a single song
 To edit the details of any particular song, send a PUT request to the /songs/:id endpoint.
 ```
-https://deployed-url/songs/:id
+https://mixer-backend.onrender.com/songs/:id
 ```
 ```
 Request Body:
@@ -114,7 +114,7 @@ Request Body:
 ### Removing a single song
 To remove any particular song from the Library, send a DELETE request to the /songs/:id endpoint.
 ```
-https://deployed-url/songs/:id
+https://mixer-backend.onrender.com/songs/:id
 ```
 ```
 Response:
